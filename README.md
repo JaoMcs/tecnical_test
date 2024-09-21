@@ -14,9 +14,13 @@ Arquitetura
 
 # Arquitetura
 O projeto foi desenvolvido utilizando o padrão MVVM:
+
 Model: Representa os dados e as estruturas de dados do aplicativo, como os objetos TransactionDTO e TransferDTO que contêm as informações do extrato.
+
 View: Toda a interface de usuário, implementada em UIKit usando ViewCode para maior controle e personalização, e SwiftUI para partes específicas da interface.
+
 ViewModel: Contém a lógica de apresentação e manipulação dos dados, servindo de intermediário entre a View e o Model. As ViewModels também gerenciam o estado da UI, como o controle do loading.
+
 
 # Managers
 Os managers foram implementados para centralizar responsabilidades e facilitar o desenvolvimento. Eles incluem:
@@ -26,20 +30,22 @@ Os managers foram implementados para centralizar responsabilidades e facilitar o
 
 # Tecnologia
 UIKit: A maior parte da interface foi construída com ViewCode para garantir flexibilidade e performance.
+
 SwiftUI: Utilizado para algumas telas, aproveitando o poder declarativo de SwiftUI para criar componentes de interface de forma rápida e eficiente.
 
 # Testes Unitários
 Todos as viewModels do projeto foram testados usando testes unitários. O foco foi garantir a funcionalidade do login (com autenticação) e o fluxo de carregamento e exibição dos extratos.
+
 Foram utilizados Mocks para simular as respostas da rede, permitindo testar cenários de sucesso e falha sem a necessidade de dependência de serviços externos.
 
 # Instruções para Rodar o Projeto
 Clone o repositório
-
 Abra o projeto no Xcode:
+
 Navegue até o diretório do projeto e abra o arquivo .xcodeproj no Xcode.
-
 Build e execução:
-Selecione um simulador ou dispositivo e execute o projeto pressionando Cmd + R.
 
+Selecione um simulador ou dispositivo e execute o projeto pressionando Cmd + R.
 Testes unitários:
+
 Para rodar os testes unitários, use Cmd + U ou vá em Product > Test.
