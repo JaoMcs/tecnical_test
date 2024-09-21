@@ -23,7 +23,9 @@ ViewModel: Contém a lógica de apresentação e manipulação dos dados, servin
 
 
 # Managers
-Os managers foram implementados para centralizar responsabilidades e facilitar o desenvolvimento. Eles incluem:
+Os managers foram implementados para centralizar responsabilidades e facilitar o desenvolvimento. 
+Eles incluem:
+
 1. Constantes estáticas: Centralizam valores reutilizáveis, como cores e fontes, garantindo consistência visual no projeto.
 2. NetworkManager: Responsável pelas requisições de rede, autenticação e renovação automática de tokens, simplificando o gerenciamento de dados externos.
 3. KeychainManager: Gerencia o armazenamento seguro de informações sensíveis, como tokens, utilizando o Keychain do iOS para garantir a proteção dos dados.
