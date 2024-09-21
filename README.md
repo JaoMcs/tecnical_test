@@ -11,28 +11,29 @@ Skeleton Loading: Enquanto os dados do extrato estão sendo carregados, um skele
 Listagem de extratos: Após o carregamento dos dados, o extrato é exibido em uma tabela, mostrando as transações financeiras do usuário.
 Detalhes do extrato: Ao selecionar um item da lista, o usuário pode visualizar os detalhes da transação, como valor, data, e as partes envolvidas.
 Arquitetura
-O projeto foi desenvolvido utilizando o padrão MVVM:
 
+#Arquitetura
+O projeto foi desenvolvido utilizando o padrão MVVM:
 Model: Representa os dados e as estruturas de dados do aplicativo, como os objetos TransactionDTO e TransferDTO que contêm as informações do extrato.
 View: Toda a interface de usuário, implementada em UIKit usando ViewCode para maior controle e personalização, e SwiftUI para partes específicas da interface.
 ViewModel: Contém a lógica de apresentação e manipulação dos dados, servindo de intermediário entre a View e o Model. As ViewModels também gerenciam o estado da UI, como o controle do loading e a renovação do token.
-Tecnologia
+
+#Tecnologia
 UIKit: A maior parte da interface foi construída com ViewCode para garantir flexibilidade e performance.
 SwiftUI: Utilizado para algumas telas, aproveitando o poder declarativo de SwiftUI para criar componentes de interface de forma rápida e eficiente.
-Combine: Utilizado para o gerenciamento de estados e a comunicação reativa entre o ViewModel e as Views.
-Testes Unitários
-Todos os componentes principais do projeto foram testados usando testes unitários. O foco foi garantir a funcionalidade do login (com autenticação) e o fluxo de carregamento e exibição dos extratos.
+
+#Testes Unitários
+Todos as viewModels do projeto foram testados usando testes unitários. O foco foi garantir a funcionalidade do login (com autenticação) e o fluxo de carregamento e exibição dos extratos.
 Foram utilizados Mocks para simular as respostas da rede, permitindo testar cenários de sucesso e falha sem a necessidade de dependência de serviços externos.
 
 # Instruções para Rodar o Projeto
 Clone o repositório
 
 Abra o projeto no Xcode:
-
 Navegue até o diretório do projeto e abra o arquivo .xcodeproj no Xcode.
+
 Build e execução:
-
 Selecione um simulador ou dispositivo e execute o projeto pressionando Cmd + R.
-Testes unitários:
 
+Testes unitários:
 Para rodar os testes unitários, use Cmd + U ou vá em Product > Test.
